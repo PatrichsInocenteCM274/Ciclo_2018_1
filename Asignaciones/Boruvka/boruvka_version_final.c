@@ -79,6 +79,8 @@ for (k=0 ; k < n ; k++){   // Recorre todas las componentes con etiqueta k.
 // Luego de tener una arista nueva,dos componentes se vuelven una,y *Va 
 // guarda la nueva configuracion de etiquetas:
 
+ registro[x]=1; // Se deja registro de que pasamos por el vertice x.
+
 //-> Si el vertice "y" ya ha sido pintado:
  if(registro[y]==1){ 
 // Pintamos todas las etiquetas que tienen valor V[x] con Va[y]
