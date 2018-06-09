@@ -5,9 +5,9 @@ void main(){
 //----------------------------------------------------------------------------------
 
 //VARIABLES A USAR:
-
+FILE* fichero;
 int i,j,k,l,t;           
-int n,bandera=1;			   
+int n,bandera,opcion;			   
 int x,y; 			        
 int menor;   
 int *V,*Va;   // Los usaremos como vectores de etiquetas.
@@ -15,11 +15,25 @@ int *registro; // registará que vertices han sido pintados.
 int **adya,**peso,**Arbol;	
 
 //----------------------------------------------------------------------------------
-
-//RESERVA DE MEMORIA: 
-
-printf("Ingrese el numero de Vertices:\n");
-scanf("%d",&n);
+do{
+//MENU PARA ELEGIR GRAFO A EVALUAR:
+do{
+printf("Elige el grafo a evaluar:\n1. Grafo1\n2. Grafo2\n3. Grafo3\n4. Grafo4\n5. Grafo5\n6. No elegir y Salir\n");
+scanf("%d",&opcion);
+switch(opcion){
+case 1  :fichero = fopen("Grafo1.txt", "rt");break;
+case 2  :fichero = fopen("Grafo2.txt", "rt");break;
+case 3  :fichero = fopen("Grafo3.txt", "rt");break;
+case 4  :fichero = fopen("Grafo4.txt", "rt");break;
+case 5  :fichero = fopen("Grafo5.txt", "rt");break;
+case 6  :printf("ADIOS\n");break;
+default :printf("Opcion incorrecta! VUELVA A INTENTARLO\n\n");break;
+}
+}while(opcion<1||opcion>6);
+//RESERVA DE MEMORIA:
+if(opcion!=6){ 
+bandera=1;
+fscanf(fichero,"%d",&n);
 
 adya = (int **) malloc (n * sizeof(int *));
 for (k=0 ; k < n ; k++) adya[k] = (int *) malloc (n * sizeof(int));
@@ -46,11 +60,10 @@ for (i=0 ; i < n ; i++) for (j=0 ; j < n ; j++) Arbol[i][j]=0;
 //-----------------------------------------------------------------------------------
 
 // LECTURA DE LAS MATRICES:
-printf("Ingrese elementos de la matriz adyacencia:\n");
-for(i=0;i<n;i++) for(j=0;j<n;j++) scanf("%d",&adya[i][j]);
-getchar();
-printf("Ingrese elementos de la matriz de pesos:\n");
-for(i=0;i<n;i++) for(j=0;j<n;j++) scanf("%d",&peso[i][j]);
+
+for(i=0;i<n;i++) for(j=0;j<n;j++) fscanf (fichero, "%d",&adya[i][j]);
+
+for(i=0;i<n;i++) for(j=0;j<n;j++) fscanf (fichero, "%d",&peso[i][j]);
 
 //-----------------------------------------------------------------------------------
 
@@ -113,7 +126,9 @@ for(k=0;k<n-1;k++) if(V[k]!=V[k+1]) bandera=1 ;
 }
 
 //----------------------------------------------------------------------------------
-printf("\n");
+printf("\n\n");
+}
+}while(opcion!=6);
 }// FIN DE PROGRAMA.		
 
 

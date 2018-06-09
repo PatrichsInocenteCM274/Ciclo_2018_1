@@ -2,25 +2,43 @@
 #include<stdlib.h>
 
 void main(){
+FILE* fichero;
 int i,j,k;           
-int n;			   
+int n,opcion;			   
 int respaldo1,respaldo2; 			        
 int menor;   
 int *V;			 
 int **adya,**peso;	    
 //------------------------------------------------
+do{
+//MENU PARA ELEGIR GRAFO A EVALUAR:
+do{
+printf("Elige el grafo a evaluar:\n1. Grafo1\n2. Grafo2\n3. Grafo3\n4. Grafo4\n5. Grafo5\n6. No elegir y Salir\n");
+scanf("%d",&opcion);
+switch(opcion){
+case 1  :fichero = fopen("Grafo1.txt", "rt");break;
+case 2  :fichero = fopen("Grafo2.txt", "rt");break;
+case 3  :fichero = fopen("Grafo3.txt", "rt");break;
+case 4  :fichero = fopen("Grafo4.txt", "rt");break;
+case 5  :fichero = fopen("Grafo5.txt", "rt");break;
+case 6  :printf("ADIOS\n");break;
+default :printf("Opcion incorrecta! VUELVA A INTENTARLO\n\n");break;
+}
+}while(opcion<1||opcion>6);
 //RESERVA DE MEMORIA:
+if(opcion!=6){
+fscanf(fichero,"%d",&n);
 
-printf("Ingrese el numero de Vertices:\n");
-scanf("%d",&n);
 adya = (int **) malloc (n * sizeof(int *));
 for (k=0 ; k < n ; k++) {
     adya[k] = (int *) malloc (n * sizeof(int));
 }
+
 peso = (int **) malloc (n * sizeof(int *));
 for (k=0 ; k < n ; k++) {
     peso[k] = (int *) malloc (n * sizeof(int));
 }
+
 V = (int *) malloc (n * sizeof(int));
 
 //--------------------------------------------------
@@ -31,13 +49,10 @@ for (k=1 ; k < n ; k++) V[k]=0;
 
 //----------------------------------------------------
 // LECTURA DE LAS MATRICES:
-printf("Ingrese elementos de la matriz adyacencia:\n");
 for(i=0;i<n;i++)
-for(j=0;j<n;j++)scanf("%d",&adya[i][j]);
-getchar();
-printf("Ingrese elementos de la matriz de pesos:\n");
+for(j=0;j<n;j++)fscanf (fichero, "%d",&adya[i][j]);
 for(i=0;i<n;i++)
-for(j=0;j<n;j++)scanf("%d",&peso[i][j]);
+for(j=0;j<n;j++)fscanf (fichero, "%d",&peso[i][j]);
 
 //-----------------------------------------------------
 // ALGORITMO:
@@ -71,9 +86,10 @@ for(i=0;i<n;i++){
 printf("}\nV={");
 for(i=0;i<n;i++)  if(V[i]==1)  printf("%d,",i+1);
   printf("}\n\n");
-}  
-
+} 
+printf("\n\n");
 // FIN DE ALGORITMO.
 //-----------------------------------------------------------
-      		 
+}
+}while(opcion!=6);
 } // FIN DE PROGRAMA.
