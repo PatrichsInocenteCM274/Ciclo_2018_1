@@ -6,7 +6,7 @@ void main(){
 
 //VARIABLES A USAR:
 FILE* fichero;
-int i,j,k,l,t;           
+int i,j,k,l,t,contador;           
 int n,bandera,opcion;			   
 int x,y; 			        
 int menor;   
@@ -17,6 +17,7 @@ int **adya,**peso,**Arbol;
 //----------------------------------------------------------------------------------
 do{
 //MENU PARA ELEGIR GRAFO A EVALUAR:
+
 do{
 printf("Elige el grafo a evaluar:\n1. Grafo1\n2. Grafo2\n3. Grafo3\n4. Grafo4\n5. Grafo5\n6. No elegir y Salir\n");
 scanf("%d",&opcion);
@@ -26,7 +27,7 @@ case 2  :fichero = fopen("Grafo2.txt", "rt");break;
 case 3  :fichero = fopen("Grafo3.txt", "rt");break;
 case 4  :fichero = fopen("Grafo4.txt", "rt");break;
 case 5  :fichero = fopen("Grafo5.txt", "rt");break;
-case 6  :printf("ADIOS\n");break;
+case 6  :printf("Gracias por su visita.\n");break;
 default :printf("Opcion incorrecta! VUELVA A INTENTARLO\n\n");break;
 }
 }while(opcion<1||opcion>6);
@@ -70,7 +71,7 @@ for(i=0;i<n;i++) for(j=0;j<n;j++) fscanf (fichero, "%d",&peso[i][j]);
 //----------------------------------------------------------------------------------
 // ALGORITMO:
 printf("\n\nResultado del Algoritmo:\n");
-
+contador=1;
 while(bandera==1){
 bandera=0;
 for (k=0 ; k < n ; k++){   // Recorre todas las componentes con etiqueta k.
@@ -115,14 +116,15 @@ for (k=0;k<n;k++)V[k]=Va[k];
 for (k=0;k<n;k++)registro[k]=0;  
 
 // Imprimimos todas las aristas de nuestroo arbol:
-printf("\nE={");
-for(i=0;i<n;i++) for(j=i;j<n;j++) if(Arbol[i][j]==1) printf("{%d,%d}",i+1,j+1);
-printf("}\n");
 
+printf("Estado N° %d:\nE={",contador);
+for(i=0;i<n;i++) for(j=i;j<n;j++) if(Arbol[i][j]==1) printf("{%d,%d}",i+1,j+1);
+printf("}\n\n");
 for(k=0;k<n-1;k++) if(V[k]!=V[k+1]) bandera=1 ;
 // Si no se logra entrar a  "if(V[k]!==V[k+1])" ni una sola vez,significara 
 // que todas las etiquetas tienen un solo valor,por lo cual bandera seguira 
 // con valor 0,terminando con el bucle while.
+contador++;
 }
 
 //----------------------------------------------------------------------------------
