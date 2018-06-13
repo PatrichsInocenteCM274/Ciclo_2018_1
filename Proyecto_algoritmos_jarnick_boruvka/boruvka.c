@@ -10,7 +10,7 @@ int i,j,k,l,t,contador;
 int n,bandera,opcion;			   
 int x,y; 			        
 int menor;   
-int *V,*Va;   // Los usaremos como vectores de etiquetas.
+char *V,*Va;   // Los usaremos como vectores de etiquetas.
 int *registro; // registará que vertices han sido pintados.			 
 int **adya,**peso,**Arbol;	
 
@@ -19,7 +19,7 @@ do{
 //MENU PARA ELEGIR GRAFO A EVALUAR:
 
 do{
-printf("Elige el grafo a evaluar:\n1. Grafo1\n2. Grafo2\n3. Grafo3\n4. Grafo4\n5. Grafo5\n6. No elegir y Salir\n");
+printf("\n\nElige el grafo a evaluar:\n1. Grafo1\n2. Grafo2\n3. Grafo3\n4. Grafo4\n5. Grafo5\n6. No elegir y Salir\n");
 scanf("%d",&opcion);
 switch(opcion){
 case 1  :fichero = fopen("Grafo1.txt", "rt");break;
@@ -45,17 +45,17 @@ for (k=0 ; k < n ; k++) peso[k] = (int *) malloc (n * sizeof(int));
 Arbol = (int **) malloc (n * sizeof(int *));
 for (k=0 ; k < n ; k++) Arbol[k] = (int *) malloc (n * sizeof(int));
 
-V = (int *) malloc (n * sizeof(int));  
+V = (char *) malloc (n * sizeof(char));  
 
 registro = (int *) malloc (n * sizeof(int));
 
-Va = (int *) malloc (n * sizeof(int)); 
+Va = (char *) malloc (n * sizeof(char)); 
 //-----------------------------------------------------------------------------------
 
 // INICIALIZACION DE CONJUNTOS Y MATRICES: 
 
-for (k=0 ; k < n ; k++) V[k]=k; 
-for (k=0 ; k < n ; k++) Va[k]=k;
+for (k=0 ; k < n ; k++) V[k]='a'+k; 
+for (k=0 ; k < n ; k++) Va[k]='a'+k;
 for (k=0 ; k < n ; k++) registro[k]=0;
 for (i=0 ; i < n ; i++) for (j=0 ; j < n ; j++) Arbol[i][j]=0;
 //-----------------------------------------------------------------------------------
@@ -71,13 +71,23 @@ for(i=0;i<n;i++) for(j=0;j<n;j++) fscanf (fichero, "%d",&peso[i][j]);
 //----------------------------------------------------------------------------------
 // ALGORITMO:
 printf("\n\nResultado del Algoritmo:\n");
+printf("\n------------------------------------------------------------------\n\nE0={}\n");
 contador=1;
 while(bandera==1){
 bandera=0;
+printf("\nV={");
+for(t=0;t<n;t++)printf("%d, ",t+1);
+printf("\b\b}\n   ");
+for(t=0;t<n;t++){
+if((t+1)/10==0)printf("%c  ",V[t]);
+else printf(" %c  ",V[t]);
+}
+printf("\n------------------------------------------------------------------");
+printf("\n");
 for (k=0 ; k < n ; k++){   // Recorre todas las componentes con etiqueta k.
 	menor=10000; 
     for (i=0 ; i < n ; i++){
-        if(V[i]==k){   // Evalua solo los vertices "i" que tienen la etiqueta k.
+        if(V[i]=='a'+k){   // Evalua solo los vertices "i" que tienen la etiqueta k.
 			    
         // Calculamos la arista con menor peso,saliendo de cualquier vertice 
         // de la componente k,salvando la posicion con las variables x e y.
@@ -86,25 +96,27 @@ for (k=0 ; k < n ; k++){   // Recorre todas las componentes con etiqueta k.
 		 menor=peso[i][j];
 		 x=i; 
 		 y=j;
+                 
 	         }
               }
           } 
    }
 // Luego de tener una arista nueva,dos componentes se vuelven una,y *Va 
 // guarda la nueva configuracion de etiquetas:
-
  registro[x]=1; // Se deja registro de que pasamos por el vertice x.
 
 //-> Si el vertice "y" ya ha sido pintado:
  if(registro[y]==1){ 
 // Pintamos todas las etiquetas que tienen valor V[x] con Va[y]
- for(t=0;t<n;t++)if(Va[t]==V[x])Va[t]=Va[y]; 
+ for(t=0;t<n;t++)if(Va[t]==Va[x])Va[t]=Va[y]; 
+
  }         
            
 //-> Si el vertice "y" aun no ha sido pintado:
  else {            
 // Pintamos todas las etiquetas que tienen valor V[y] con Va[x]  
  for(t=0;t<n;t++)if(Va[t]==V[y])Va[t]=Va[x]; 
+  
  registro[y]=1; // Registramos que estamos pintando el vertice y.
  }
  Arbol[x][y]=Arbol[y][x]=1; // La arista se registra en nuestro arbol.
@@ -117,19 +129,27 @@ for (k=0;k<n;k++)registro[k]=0;
 
 // Imprimimos todas las aristas de nuestroo arbol:
 
-printf("Estado N° %d:\nE={",contador);
-for(i=0;i<n;i++) for(j=i;j<n;j++) if(Arbol[i][j]==1) printf("{%d,%d}",i+1,j+1);
-printf("}\n\n");
+printf("\nE%d={",contador);
+for(i=0;i<n;i++) for(j=i;j<n;j++) if(Arbol[i][j]==1) printf("{%d,%d},",i+1,j+1);
+printf("\b}\n");
 for(k=0;k<n-1;k++) if(V[k]!=V[k+1]) bandera=1 ;
 // Si no se logra entrar a  "if(V[k]!==V[k+1])" ni una sola vez,significara 
 // que todas las etiquetas tienen un solo valor,por lo cual bandera seguira 
 // con valor 0,terminando con el bucle while.
 contador++;
 }
-
-//----------------------------------------------------------------------------------
-printf("\n\n");
+printf("\nV={");
+for(t=0;t<n;t++)printf("%d, ",t+1);
+printf("\b\b}\n   ");
+for(t=0;t<n;t++){
+if((t+1)/10==0)printf("%c  ",V[t]);
+else printf(" %c  ",V[t]);
 }
+printf("\n------------------------------------------------------------------");
+//----------------------------------------------------------------------------------
+printf("\n");
+}
+
 }while(opcion!=6);
 }// FIN DE PROGRAMA.		
 

@@ -57,9 +57,9 @@ for(j=0;j<n;j++)fscanf (fichero, "%d",&peso[i][j]);
 //-----------------------------------------------------
 // ALGORITMO:
 printf("\n\nResultado del Algoritmo:\n");
-
+printf("------------------------------------------------------------------\n\n");
+printf("E0={}\n\nV0={1}\n\n");
 for(k=0;k<n-1;k++){
-	printf("Estado N° %d:\n\n",k+1);
 	menor=10000;
 	for(i=0;i<n;i++){
 	    if(V[i]==1){
@@ -79,17 +79,19 @@ V[respaldo2]=1;
 
 // MOSTRAMOS EL CONJUNTO DE ARISTAS Y DE VERTICES SELECCIONADOS
 // HASTA LA K-ESIMA ITERACION DEL ALGORITMO:
-printf("E={");
+printf("------------------------------------------------------------------\n\n");
+printf("E%d={",k+1);
 for(i=0;i<n;i++){
-  for(j=i;j<n;j++) if(adya[i][j]==2) printf("{%d,%d}",i+1,j+1);
+  for(j=i;j<n;j++) if(adya[i][j]==2) printf("{%d,%d},",i+1,j+1);
 }
-printf("}\nV={");
+printf("\b}\n\nV%d={",k+1);
 for(i=0;i<n;i++)  if(V[i]==1)  printf("%d,",i+1);
-  printf("}\n\n");
+  printf("\b}\n\n");
 } 
-printf("\n\n");
+printf("\n");
 // FIN DE ALGORITMO.
 //-----------------------------------------------------------
 }
+printf("------------------------------------------------------------------\n\n");
 }while(opcion!=6);
 } // FIN DE PROGRAMA.
