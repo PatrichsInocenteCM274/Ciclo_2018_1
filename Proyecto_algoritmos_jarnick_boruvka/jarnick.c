@@ -13,7 +13,7 @@ int **adya,**peso;
 do{
 //MENU PARA ELEGIR GRAFO A EVALUAR:
 do{
-printf("Elige el grafo a evaluar:\n1. Grafo1\n2. Grafo2\n3. Grafo3\n4. Grafo4\n5. Grafo5\n6. No elegir y Salir\n");
+printf("\n\nElige el grafo a evaluar:\n1. Grafo1\n2. Grafo2\n3. Grafo3\n4. Grafo4\n5. Grafo5\n6. No elegir y Salir\n\n");
 scanf("%d",&opcion);
 switch(opcion){
 case 1  :fichero = fopen("Grafo1.txt", "rt");break;
@@ -55,6 +55,7 @@ for(i=0;i<n;i++)
 for(j=0;j<n;j++)fscanf (fichero, "%d",&peso[i][j]);
 
 //-----------------------------------------------------
+
 // ALGORITMO:
 printf("\n\nResultado del Algoritmo:\n");
 printf("------------------------------------------------------------------\n\n");
@@ -63,13 +64,13 @@ for(k=0;k<n-1;k++){
 	menor=10000;
 	for(i=0;i<n;i++){
 	    if(V[i]==1){
- 	       for(j=0;j<n;j++){  
-	           if (peso[i][j]< menor && adya[i][j]==1 && V[i]!=V[j]){
-					 menor=peso[i][j];
-					 respaldo1=i;
-				         respaldo2=j;
-                   }
-	       }
+ 	      for(j=0;j<n;j++){  
+	        if (peso[i][j]< menor&&adya[i][j]==1&&V[i]!=V[j]){
+		        menor=peso[i][j];
+			respaldo1=i;
+			respaldo2=j;
+                }
+	      }
  
 	    }
 
