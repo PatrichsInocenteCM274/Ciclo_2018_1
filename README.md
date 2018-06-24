@@ -17,62 +17,58 @@ Explicaremos la instalacion de R y Rstdio:
 #### Instalacion de R version 3.5.0 o su versi?n m?s reciente:
 
 1. Acceda al siguiente link: https://cran.r-project.org/bin/windows/base/, a continuacion seleccione la opcion "Download R 3.5.0 for Windows" .
-![](https://github.com/PatrichsInocenteCM274/Discreta/blob/master/imagenes/Captura%20de%20pantalla%20(11).png)
+![](https://github.com/PatrichsInocenteCM274/Discreta/blob/master/imagenes/Captura%20de%20pantalla%20(9).png)
 
-&nbsp;
+
 2. Ejecutar el archivo "R-3.5.0-win.exe" y proceder la instalaci?n segun los pasos que se le indican.
 
-<center> ![imagen](./Captura de pantalla (13).png)<\center>
+![](https://github.com/PatrichsInocenteCM274/Discreta/blob/master/imagenes/Captura%20de%20pantalla%20(13).png)
 
 
-&nbsp;
 
-&nbsp;
 3. Finalizamos la instalacion, verificaremos su instalacion correcta luego de instalar RStdio.
 
 #### Instalacion del entorno de desarrollo RStdio:
 
 1. Acceda a la pagina principal de RStdio con el siguiente Link: https://www.rstudio.com/products/rstudio/download/ y descargue el instalador mas apropiado para su configuracion de hardware.
 
-&nbsp;
-<center> ![imagen](./Captura de pantalla (11).png)<\center>
+![](https://github.com/PatrichsInocenteCM274/Discreta/blob/master/imagenes/Captura%20de%20pantalla%20(11).png)
 
-&nbsp;
+
 2. Ejecutar el archivo "RStdio-1.1.453.exe" generado y proceder la instalaci?n segun los pasos que se le indican.
 
-&nbsp;
-<center> ![imagen](./Captura de pantalla (16).png)<\center>
+![](https://github.com/PatrichsInocenteCM274/Discreta/blob/master/imagenes/Captura%20de%20pantalla%20(16).png)
 
 
 
 #### Descargar el contenido del proyecto:
 
 1. Acceda al repositorio de nuestro proyecto que se encuentra en Github, hagalo mediante el siguiente link: https://github.com/marcoleonrios/Estadistica20181/tree/master, a continuaci?n seleccione la opcion "Clone or download", acto seguido poceda a seleccionar Download ZIP.
-<center> ![imagen](./Captura de pantalla (12).png)<\center>
+![](https://github.com/PatrichsInocenteCM274/Discreta/blob/master/imagenes/Captura%20de%20pantalla%20(12).png)
 
 2. Luego de descargar el archivo, proceda a extraer el archivo en el directorio de su preferencia, luego de ello , ingrese a la carpeta "Estadistica20181-master" generada.
-<center> ![imagen](./Captura de pantalla (14).png)<\center>
+![](https://github.com/PatrichsInocenteCM274/Discreta/blob/master/imagenes/Captura%20de%20pantalla%20(14).png)
 
 3. Acceda a la carpeta "C?digo"
-<center> ![imagen](./Captura de pantalla (15).png)<\center>
+![](https://github.com/PatrichsInocenteCM274/Discreta/blob/master/imagenes/Captura%20de%20pantalla%20(15).png)
 
 4. Abra el archivo "codigo_proyecto.R" con RStdio.
-<center> ![imagen](./Captura de pantalla (18).png)<\center>
+![](https://github.com/PatrichsInocenteCM274/Discreta/blob/master/imagenes/Captura%20de%20pantalla%20(18).png)
 
 5. Sombree todo el c?digo y seleccione la opcion "Run"
-<center> ![imagen](./Captura de pantalla (31).png)<\center>
+![](https://github.com/PatrichsInocenteCM274/Discreta/blob/master/imagenes/Captura%20de%20pantalla%20(31).png)
 6. Espere que se instalen las librerias "rgdal" y "rgeos", luego de ello aparecera una ventana de seleccion de archivo, con la finalidad de escoger nuestro mapa.
-<center> ![imagen](./Captura de pantalla (23).png)<\center>
+![](https://github.com/PatrichsInocenteCM274/Discreta/blob/master/imagenes/Captura%20de%20pantalla%20(23).png)
 
 7. Buscamos la carpeta Pruebas_mapas que se encuentra en el mismo directorio que nuestro codigo.
-<center> ![imagen](./Captura de pantalla (24).png)<\center>
+![](https://github.com/PatrichsInocenteCM274/Discreta/blob/master/imagenes/Captura%20de%20pantalla%20(24).png)
 luego, elegimos el mapa que deseemos
-<center> ![imagen](./Captura de pantalla (25).png)<\center>
+![](https://github.com/PatrichsInocenteCM274/Discreta/blob/master/imagenes/Captura%20de%20pantalla%20(25).png)
 Para la seleccion tomada,buscamos un archivo con terminacion .shp, aqui se alojan los poligonos de nuestro mapa sin colorear, a continuacion seleccionamos abrir.
-<center> ![imagen](./Captura de pantalla (27).png)<\center>
+![](https://github.com/PatrichsInocenteCM274/Discreta/blob/master/imagenes/Captura%20de%20pantalla%20(27).png)
 Finalmente obtenemos:
-<center> ![imagen](./Captura de pantalla (28).png)<\center>
+![](https://github.com/PatrichsInocenteCM274/Discreta/blob/master/imagenes/Captura%20de%20pantalla%20(28).png)
 NUESTRO MAPA PINTADO!!
-<center> ![imagen](./Captura de pantalla (30).png)<\center>
+![](https://github.com/PatrichsInocenteCM274/Discreta/blob/master/imagenes/Captura%20de%20pantalla%20(30).png)
 
 
