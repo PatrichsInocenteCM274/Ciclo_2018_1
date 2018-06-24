@@ -14,7 +14,7 @@
 
 ### Instalación de R version 3.5.0 o su versión más reciente:
 
-#### 1. Acceda al siguiente link: https://cran.r-project.org/bin/windows/base/, a continuacion seleccione la opción "Download R 3.5.0 for Windows" .
+#### 1. Acceda al siguiente link: https://cran.r-project.org/bin/windows/base/, a continuación seleccione la opción "Download R 3.5.0 for Windows" .
 ![](https://github.com/PatrichsInocenteCM274/Discreta/blob/master/imagenes/Captura%20de%20pantalla%20(9).png)
 
 
