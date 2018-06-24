@@ -1,6 +1,6 @@
 # Editor.md
 
-![](https://pandao.github.io/editor.md/images/logos/editormd-logo-180x180.png)
+![](https://github.com/PatrichsInocenteCM274/Discreta/blob/master/imagenes/Captura%20de%20pantalla%20(11).png)
 
 ![](https://img.shields.io/github/stars/pandao/editor.md.svg)
 ![](https://img.shields.io/github/forks/pandao/editor.md.svg)
