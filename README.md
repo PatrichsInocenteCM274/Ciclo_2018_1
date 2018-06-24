@@ -39,7 +39,7 @@
 
 ![](https://github.com/PatrichsInocenteCM274/Discreta/blob/master/imagenes/imagen4.png)
 
-
+#### 3. Finalizamos la instalación, verificando que el programa se encuentre en nuestro ordenador.
 
 ### Descargar el contenido del proyecto:
 
@@ -49,31 +49,34 @@
 #### 2. Luego de descargar el archivo, proceda a extraer el archivo en el directorio de su preferencia, luego de ello , ingrese a la carpeta "Estadistica20181-master" generada.
 ![](https://github.com/PatrichsInocenteCM274/Discreta/blob/master/imagenes/imagen6.png)
 
-#### 3. Acceda a la carpeta "Código"
+#### 3. Acceda a la carpeta "PROYECTO IA"
 ![](https://github.com/PatrichsInocenteCM274/Discreta/blob/master/imagenes/imagen7.png)
 
-#### 4. Ejecute el archivo "codigo_proyecto.R" con RStdio.
+#### 4. Acceda a la carpeta "VERIFICACIÓN"
+![](https://github.com/PatrichsInocenteCM274/Discreta/blob/master/imagenes/imagen7.1.png)
+
+#### 5. Acceda a la carpeta "CÓDIGO FUENTE"
+![](https://github.com/PatrichsInocenteCM274/Discreta/blob/master/imagenes/imagen7.2.png)
+
+#### 6. Ejecute el archivo "Codigo Fuente Oficial" con RStdio.
 ![](https://github.com/PatrichsInocenteCM274/Discreta/blob/master/imagenes/imagen8.png)
 
-#### 5. Sombree todo el código y seleccione la opción "Run".
+#### 7. Sombree todo el código y seleccione la opción "Run".
 ![](https://github.com/PatrichsInocenteCM274/Discreta/blob/master/imagenes/imagen9.png)
 
-#### 6. Espere que se instalen las librerias "rgdal" y "rgeos", luego de ello aparecera una ventana de seleccion de archivo, con la finalidad de escoger nuestro mapa.
+#### 8. Espere que se instalen las librerias "rgdal" y "rgeos", luego de ello aparecera una ventana de seleccion de archivo, con la finalidad de escoger nuestro mapa. A continuación busque la carpeta "VERIFICACIÓN" entre en ella y seleccione la carpeta "DATOS DE PRUEBA-MAPAS"
 ![](https://github.com/PatrichsInocenteCM274/Discreta/blob/master/imagenes/imagen10.png)
 
-#### 7. Busque la carpeta Pruebas_mapas que se encuentra en el mismo directorio que nuestro código.
+#### 9. Elija el mapa de su preferencia
 ![](https://github.com/PatrichsInocenteCM274/Discreta/blob/master/imagenes/imagen11.png)
 
-#### 8. Elija el mapa de su preferencia
+#### 10. Luego de su selección,busque un archivo con terminación .shp, aqui se alojan los poligonos de nuestro mapa sin colorear, a continuación seleccionamos abrir.
 ![](https://github.com/PatrichsInocenteCM274/Discreta/blob/master/imagenes/imagen12.png)
 
-#### 9. Luego de su selección,busque un archivo con terminación .shp, aqui se alojan los poligonos de nuestro mapa sin colorear, a continuación seleccionamos abrir.
+#### 11. Finalmente obtenemos:
 ![](https://github.com/PatrichsInocenteCM274/Discreta/blob/master/imagenes/imagen13.png)
 
-#### 10. Finalmente obtenemos:
+#### 12. Seleccione la opción "Zoom" y observaremos a detalle nuestro mapa pintado!!!
 ![](https://github.com/PatrichsInocenteCM274/Discreta/blob/master/imagenes/imagen14.png)
-
-#### NUESTRO MAPA PINTADO!!
-![](https://github.com/PatrichsInocenteCM274/Discreta/blob/master/imagenes/imagen15.png)
 
 
