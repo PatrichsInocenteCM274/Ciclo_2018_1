@@ -17,7 +17,7 @@ Explicaremos la instalacion de R y Rstdio:
 #### Instalacion de R version 3.5.0 o su versi?n m?s reciente:
 
 1. Acceda al siguiente link: https://cran.r-project.org/bin/windows/base/, a continuacion seleccione la opcion "Download R 3.5.0 for Windows" .
-<center>![](https://github.com/PatrichsInocenteCM274/Discreta/blob/master/imagenes/Captura%20de%20pantalla%20(11).png)<\center>
+![](https://github.com/PatrichsInocenteCM274/Discreta/blob/master/imagenes/Captura%20de%20pantalla%20(11).png)
 
 &nbsp;
 2. Ejecutar el archivo "R-3.5.0-win.exe" y proceder la instalaci?n segun los pasos que se le indican.
