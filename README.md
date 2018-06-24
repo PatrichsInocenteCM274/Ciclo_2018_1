@@ -12,9 +12,9 @@
 
  - Entorno de desarrollo RStdio .
 
+ - Contenido del Proyecto .
 
-
-### Instalación de R version 3.5.0 o su versión más reciente:
+## Instalación de R version 3.5.0 o su versión más reciente:
 
 #### 1. Acceda al siguiente link: https://cran.r-project.org/bin/windows/base/, a continuación seleccione la opción "Download R 3.5.0 for Windows" .
 ![](https://github.com/PatrichsInocenteCM274/Discreta/blob/master/imagenes/imagen1.png)
@@ -28,7 +28,7 @@
 
 #### 3. Finalizamos la instalación, verificaremos su instalación correcta luego de instalar RStdio.
 
-### Instalación del entorno de desarrollo RStdio:
+## Instalación del entorno de desarrollo RStdio:
 
 #### 1. Acceda a la pagina principal de RStdio con el siguiente Link: https://www.rstudio.com/products/rstudio/download/ y descargue el instalador más apropiado para su configuración de hardware.
 
@@ -41,7 +41,7 @@
 
 #### 3. Finalizamos la instalación, verificando que el programa se encuentre en nuestro ordenador.
 
-### Descargar el contenido del proyecto:
+## Descargar el contenido del proyecto:
 
 #### 1. Acceda al repositorio de nuestro proyecto, el cual se encuentra en Github, hagalo mediante el siguiente link: https://github.com/marcoleonrios/Estadistica20181/tree/master, a continuación seleccione la opción "Clone or download", acto seguido proceda a seleccionar "Download ZIP".
 ![](https://github.com/PatrichsInocenteCM274/Discreta/blob/master/imagenes/imagen5.png)
