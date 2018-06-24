@@ -64,7 +64,7 @@
 #### 7. Luego de abrir el código, sombreelo y a continuación seleccione la opción "Run".
 ![](https://github.com/PatrichsInocenteCM274/Discreta/blob/master/imagenes/imagen9.png)
 
-#### 8. Espere que se instalen las librerias "rgdal" y "rgeos", luego de ello aparecera una ventana de seleccion de archivo, con la finalidad de escoger nuestro mapa. A continuación busque la carpeta "VERIFICACIÓN" entre en ella y seleccione la carpeta "DATOS DE PRUEBA-MAPAS"
+#### 8. Espere que se instalen las librerias "rgdal" y "rgeos", luego de ello aparecerá una ventana de selección de archivo, con la finalidad de escoger nuestro mapa. A continuación busque la carpeta "VERIFICACIÓN", éntre en ella y seleccione la carpeta "DATOS DE PRUEBA-MAPAS"
 ![](https://github.com/PatrichsInocenteCM274/Discreta/blob/master/imagenes/imagen10.png)
 
 #### 9. Elija el mapa de su preferencia
