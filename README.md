@@ -2,9 +2,9 @@
 title: "Coloracion de Mapas en R"
 output: html_document
 ---
-####Proyecto de Introducci?n a la Inteligencia Artificial
+#### Proyecto de Introduccion a la Inteligencia Artificial
 
-#####Para la replica de los resultados del proyecto, se requiere de forma indispensable:
+##### Para la replica de los resultados del proyecto, se requiere de forma indispensable:
 
 - Windows en cualquiera de las versiones:  9x/ME/NT4.0/2000/XP/2003/Vista/7/8/2012 Server/8.1 .
 
@@ -14,7 +14,7 @@ output: html_document
 
 Explicaremos la instalacion de R y Rstdio:
 
-####Instalaci?n de R version 3.5.0 o su versi?n m?s reciente:
+#### Instalacion de R version 3.5.0 o su versi?n m?s reciente:
 
 1. Acceda al siguiente link: https://cran.r-project.org/bin/windows/base/, a continuacion seleccione la opcion "Download R 3.5.0 for Windows" .
 ![imagen](./Captura de pantalla (9).png)
@@ -28,9 +28,9 @@ Explicaremos la instalacion de R y Rstdio:
 &nbsp;
 
 &nbsp;
-3. Finalizamos la instalaci?n, verificaremos su instalacion correcta luego de instalar RStdio.
+3. Finalizamos la instalacion, verificaremos su instalacion correcta luego de instalar RStdio.
 
-####Instalaci?n del entorno de desarrollo RStdio:
+#### Instalacion del entorno de desarrollo RStdio:
 
 1. Acceda a la pagina principal de RStdio con el siguiente Link: https://www.rstudio.com/products/rstudio/download/ y descargue el instalador mas apropiado para su configuracion de hardware.
 
@@ -45,7 +45,7 @@ Explicaremos la instalacion de R y Rstdio:
 
 
 
-####Descargar el contenido del proyecto:
+#### Descargar el contenido del proyecto:
 
 1. Acceda al repositorio de nuestro proyecto que se encuentra en Github, hagalo mediante el siguiente link: https://github.com/marcoleonrios/Estadistica20181/tree/master, a continuaci?n seleccione la opcion "Clone or download", acto seguido poceda a seleccionar Download ZIP.
 <center> ![imagen](./Captura de pantalla (12).png)<\center>
