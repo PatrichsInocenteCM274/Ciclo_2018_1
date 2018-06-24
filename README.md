@@ -1,78 +1,119 @@
----
-title: "Coloracion de Mapas en R"
-output: html_document
----
-#### Proyecto de Introduccion a la Inteligencia Artificial
+# Editor.md
 
-##### Para la replica de los resultados del proyecto, se requiere de forma indispensable:
+![](https://pandao.github.io/editor.md/images/logos/editormd-logo-180x180.png)
 
-- Windows en cualquiera de las versiones:  9x/ME/NT4.0/2000/XP/2003/Vista/7/8/2012 Server/8.1 .
+![](https://img.shields.io/github/stars/pandao/editor.md.svg)
+![](https://img.shields.io/github/forks/pandao/editor.md.svg)
+![](https://img.shields.io/github/tag/pandao/editor.md.svg)
+![](https://img.shields.io/github/release/pandao/editor.md.svg)
+![](https://img.shields.io/github/issues/pandao/editor.md.svg)
+![](https://img.shields.io/bower/v/editor.md.svg)
 
-- R para Windows, version superior a 3.3.0 .
+**Editor.md** : The open source embeddable online markdown editor (component), based on CodeMirror & jQuery & Marked.
 
-- Entorno de desarrollo RStdio .
+### Features
 
-Explicaremos la instalacion de R y Rstdio:
+- Support Standard Markdown / CommonMark and GFM (GitHub Flavored Markdown);
+- Full-featured: Real-time Preview, Image (cross-domain) upload, Preformatted text/Code blocks/Tables insert, Code fold, Search replace, Read only, Themes, Multi-languages, L18n, HTML entities, Code syntax highlighting...;
+- Markdown Extras : Support [ToC (Table of Contents)](https://pandao.github.io/editor.md/examples/toc.html), [Emoji](https://pandao.github.io/editor.md/examples/emoji.html), [Task lists](https://pandao.github.io/editor.md/examples/task-lists.html), [@Links](https://pandao.github.io/editor.md/examples/@links.html)...;
+- Compatible with all major browsers (IE8+), compatible Zepto.js and iPad;
+- Support [decode & fliter of the HTML tags & attributes](https://pandao.github.io/editor.md/examples/html-tags-decode.html);
+- Support [TeX (LaTeX expressions, Based on KaTeX)](https://pandao.github.io/editor.md/examples/katex.html), [Flowchart](https://pandao.github.io/editor.md/examples/flowchart.html) and [Sequence Diagram](https://pandao.github.io/editor.md/examples/sequence-diagram.html) of Markdown extended syntax;
+- Support AMD/CMD (Require.js & Sea.js) Module Loader, and Custom/define editor plugins;
 
-#### Instalacion de R version 3.5.0 o su versi?n m?s reciente:
+[README & Examples (English)](https://pandao.github.io/editor.md/en.html)
+  
 
-1. Acceda al siguiente link: https://cran.r-project.org/bin/windows/base/, a continuacion seleccione la opcion "Download R 3.5.0 for Windows" .
-![imagen](./Captura de pantalla (9).png)
+--------
 
-&nbsp;
-2. Ejecutar el archivo "R-3.5.0-win.exe" y proceder la instalaci?n segun los pasos que se le indican.
+**Editor.md** 是一款开源的、可嵌入的 Markdown 在线编辑器（组件），基于 CodeMirror、jQuery 和 Marked 构建。
 
-<center> ![imagen](./Captura de pantalla (13).png)<\center>
+![editormd-screenshot](https://pandao.github.io/editor.md/examples/images/editormd-screenshot.png "editormd-screenshot")
 
+#### 主要特性
 
-&nbsp;
+- 支持通用 Markdown / CommonMark 和 GFM (GitHub Flavored Markdown) 风格的语法，也可[变身为代码编辑器](https://pandao.github.io/editor.md/examples/change-mode.html)；
+- 支持实时预览、图片（跨域）上传、预格式文本/代码/表格插入、代码折叠、跳转到行、搜索替换、只读模式、自定义样式主题和多语言语法高亮等功能；
+- 支持 [ToC（Table of Contents）](https://pandao.github.io/editor.md/examples/toc.html)、[Emoji表情](https://pandao.github.io/editor.md/examples/emoji.html)、[Task lists](https://pandao.github.io/editor.md/examples/task-lists.html)、[@链接](https://pandao.github.io/editor.md/examples/@links.html)等 Markdown 扩展语法；
+- 支持 TeX 科学公式（基于 [KaTeX](https://pandao.github.io/editor.md/examples/katex.html)）、流程图 [Flowchart](https://pandao.github.io/editor.md/examples/flowchart.html) 和 [时序图 Sequence Diagram](https://pandao.github.io/editor.md/examples/sequence-diagram.html);
+- 支持[识别和解析 HTML 标签，并且支持自定义过滤标签及属性解析](https://pandao.github.io/editor.md/examples/html-tags-decode.html)，具有可靠的安全性和几乎无限的扩展性；
+- 支持 AMD / CMD 模块化加载（支持 [Require.js](https://pandao.github.io/editor.md/examples/use-requirejs.html) & [Sea.js](https://pandao.github.io/editor.md/examples/use-seajs.html)），并且支持[自定义扩展插件](https://pandao.github.io/editor.md/examples/define-plugin.html)；
+- 兼容主流的浏览器（IE8+）和 [Zepto.js](https://pandao.github.io/editor.md/examples/use-zepto.html)，且支持 iPad 等平板设备；
 
-&nbsp;
-3. Finalizamos la instalacion, verificaremos su instalacion correcta luego de instalar RStdio.
+#### Examples
 
-#### Instalacion del entorno de desarrollo RStdio:
+[https://pandao.github.io/editor.md/examples/index.html](https://pandao.github.io/editor.md/examples/index.html)
 
-1. Acceda a la pagina principal de RStdio con el siguiente Link: https://www.rstudio.com/products/rstudio/download/ y descargue el instalador mas apropiado para su configuracion de hardware.
+#### Download & install
 
-&nbsp;
-<center> ![imagen](./Captura de pantalla (11).png)<\center>
+[Github download](https://github.com/pandao/editor.md/archive/master.zip)
 
-&nbsp;
-2. Ejecutar el archivo "RStdio-1.1.453.exe" generado y proceder la instalaci?n segun los pasos que se le indican.
+Bower install :
 
-&nbsp;
-<center> ![imagen](./Captura de pantalla (16).png)<\center>
+```shell
+bower install editor.md
+```
 
+#### Usages
 
+HTML：
 
-#### Descargar el contenido del proyecto:
+```html
+<link rel="stylesheet" href="editormd.min.css" />
+<div id="editormd">
+    <textarea style="display:none;">### Hello Editor.md !</textarea>
+</div>
+```
 
-1. Acceda al repositorio de nuestro proyecto que se encuentra en Github, hagalo mediante el siguiente link: https://github.com/marcoleonrios/Estadistica20181/tree/master, a continuaci?n seleccione la opcion "Clone or download", acto seguido poceda a seleccionar Download ZIP.
-<center> ![imagen](./Captura de pantalla (12).png)<\center>
+> Tip: Editor.md can auto append `<textarea>` tag;
 
-2. Luego de descargar el archivo, proceda a extraer el archivo en el directorio de su preferencia, luego de ello , ingrese a la carpeta "Estadistica20181-master" generada.
-<center> ![imagen](./Captura de pantalla (14).png)<\center>
+javascript:
 
-3. Acceda a la carpeta "C?digo"
-<center> ![imagen](./Captura de pantalla (15).png)<\center>
+```html
+<script src="jquery.min.js"></script>
+<script src="editormd.min.js"></script>
+<script type="text/javascript">
+    $(function() {
+        var editor = editormd("editormd", {
+            path : "../lib/" // Autoload modules mode, codemirror, marked... dependents libs path
+        });
 
-4. Abra el archivo "codigo_proyecto.R" con RStdio.
-<center> ![imagen](./Captura de pantalla (18).png)<\center>
+        /*
+        // or
+        var editor = editormd({
+            id   : "editormd",
+            path : "../lib/"
+        });
+        */
+    });
+</script>
+```
 
-5. Sombree todo el c?digo y seleccione la opcion "Run"
-<center> ![imagen](./Captura de pantalla (31).png)<\center>
-6. Espere que se instalen las librerias "rgdal" y "rgeos", luego de ello aparecera una ventana de seleccion de archivo, con la finalidad de escoger nuestro mapa.
-<center> ![imagen](./Captura de pantalla (23).png)<\center>
+Using modular script loader :
 
-7. Buscamos la carpeta Pruebas_mapas que se encuentra en el mismo directorio que nuestro codigo.
-<center> ![imagen](./Captura de pantalla (24).png)<\center>
-luego, elegimos el mapa que deseemos
-<center> ![imagen](./Captura de pantalla (25).png)<\center>
-Para la seleccion tomada,buscamos un archivo con terminacion .shp, aqui se alojan los poligonos de nuestro mapa sin colorear, a continuacion seleccionamos abrir.
-<center> ![imagen](./Captura de pantalla (27).png)<\center>
-Finalmente obtenemos:
-<center> ![imagen](./Captura de pantalla (28).png)<\center>
-NUESTRO MAPA PINTADO!!
-<center> ![imagen](./Captura de pantalla (30).png)<\center>
+- [Using Require.js](https://github.com/pandao/editor.md/tree/master/examples/use-requirejs.html)
+- [Using Sea.js](https://github.com/pandao/editor.md/tree/master/examples/use-seajs.html)
 
+#### Dependents
 
+- [CodeMirror](http://codemirror.net/ "CodeMirror")
+- [marked](https://github.com/chjj/marked "marked")
+- [jQuery](http://jquery.com/ "jQuery")
+- [FontAwesome](http://fontawesome.io/ "FontAwesome")
+- [github-markdown.css](https://github.com/sindresorhus/github-markdown-css "github-markdown.css")
+- [KaTeX](http://khan.github.io/KaTeX/ "KaTeX")
+- [prettify.js](http://code.google.com/p/google-code-prettify/ "prettify.js")
+- [Rephael.js](http://raphaeljs.com/ "Rephael.js")
+- [flowchart.js](http://adrai.github.io/flowchart.js/ "flowchart.js")
+- [sequence-diagram.js](http://bramp.github.io/js-sequence-diagrams/ "sequence-diagram.js")
+- [Prefixes.scss](https://github.com/pandao/prefixes.scss "Prefixes.scss")
+
+#### Changes
+
+[Change logs](https://github.com/pandao/editor.md/blob/master/CHANGE.md)
+
+#### License
+
+The MIT License.
+
+Copyright (c) 2015 Pandao
