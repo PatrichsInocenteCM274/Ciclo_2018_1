@@ -61,7 +61,7 @@
 #### 6. Ejecute el archivo "Codigo Fuente Oficial" con RStdio.
 ![](https://github.com/PatrichsInocenteCM274/Discreta/blob/master/imagenes/imagen8.png)
 
-#### 7. Sombree todo el código y seleccione la opción "Run".
+#### 7. Luego de abrir el código, sombreelo y a continuación seleccione la opción "Run".
 ![](https://github.com/PatrichsInocenteCM274/Discreta/blob/master/imagenes/imagen9.png)
 
 #### 8. Espere que se instalen las librerias "rgdal" y "rgeos", luego de ello aparecera una ventana de seleccion de archivo, con la finalidad de escoger nuestro mapa. A continuación busque la carpeta "VERIFICACIÓN" entre en ella y seleccione la carpeta "DATOS DE PRUEBA-MAPAS"
