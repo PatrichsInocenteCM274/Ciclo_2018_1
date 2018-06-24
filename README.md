@@ -1,9 +1,8 @@
+# Coloración de Mapas en R
 
-# Coloracion de Mapas en R
+#### Proyecto de Introduccion a la Inteligencia Artificial
 
-### Proyecto de Introduccion a la Inteligencia Artificial
-
-#### Para la replica de los resultados del proyecto, se requiere de forma indispensable:
+##### Para la replica de los resultados del proyecto, se requiere de forma indispensable:
 
 - Windows en cualquiera de las versiones:  9x/ME/NT4.0/2000/XP/2003/Vista/7/8/2012 Server/8.1 .
 
