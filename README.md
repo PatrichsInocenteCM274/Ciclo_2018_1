@@ -4,11 +4,11 @@
 
 ### Para la réplica de los resultados del proyecto, se requiere de forma indispensable:
 
-#### - Windows en cualquiera de las versiones:  9x/ME/NT4.0/2000/XP/2003/Vista/7/8/2012 Server/8.1 .
+ - Windows en cualquiera de las versiones:  9x/ME/NT4.0/2000/XP/2003/Vista/7/8/2012 Server/8.1 .
 
-#### - R para Windows, versión superior a 3.3.0 .
+ - R para Windows, versión superior a 3.3.0 .
 
-#### - Entorno de desarrollo RStdio .
+ - Entorno de desarrollo RStdio .
 
 
 
