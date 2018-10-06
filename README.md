@@ -1,1 +1,1 @@
-# Matemática Discreta, Ciclo 2017-2
+# Ciclo académico 2017-2 
